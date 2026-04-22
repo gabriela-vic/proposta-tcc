@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --accent-color: #2c3e50; /* Azul petróleo sóbrio */
+    --border-color: #e0e0e0;
+    --font-serif: 'Lora', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-serif);
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegação */
+.navbar {
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+    font-family: var(--font-sans);
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 60px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: var(--accent-color);
+}
+
+.subtitle {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+/* Conteúdo */
+h2 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    margin: 40px 0 20px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.15rem;
+}
+
+.references p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 60px 0;
+}
+
+/* Rodapé */
+footer {
+    padding: 60px 0;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+    .hero h1 { font-size: 2rem; }
+    .nav-links { display: none; } /* Esconde o menu em telas muito pequenas */
+}
