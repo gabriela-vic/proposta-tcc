@@ -131,3 +131,13 @@ footer {
     .hero h1 { font-size: 2rem; }
     .nav-links { display: none; } /* Esconde o menu em telas muito pequenas */
 }
+
+ol li {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+ol li ul {
+    margin-top: 0.6rem;
+    margin-left: 2rem;
+}
