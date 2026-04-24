@@ -132,12 +132,17 @@ footer {
     .nav-links { display: none; } /* Esconde o menu em telas muito pequenas */
 }
 
+ol {
+    padding-left: 1.5rem;
+}
+
 ol li {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
 ol li ul {
     margin-top: 0.6rem;
-    margin-left: 5rem;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
 }
