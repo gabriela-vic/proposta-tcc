@@ -146,3 +146,45 @@ ol li ul {
     margin-left: 1.5rem;
     padding-left: 1rem;
 }
+
+.gantt {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font-sans);
+}
+
+.gantt-header,
+.gantt-row {
+    display: grid;
+    grid-template-columns: 2fr repeat(7, 1fr);
+    align-items: center;
+    gap: 8px;
+}
+
+.gantt-header {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.gantt-row span {
+    font-size: 0.9rem;
+}
+
+.bar {
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 6px;
+}
+
+.bar.writing {
+    background-color: #888; /* mais neutro */
+}
+
+.bar.final {
+    background-color: #000; /* destaque final */
+}
