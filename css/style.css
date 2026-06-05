@@ -27,9 +27,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: min(1400px, 92vw);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 /* Navegação */
