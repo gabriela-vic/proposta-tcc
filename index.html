@@ -51,56 +51,59 @@
 
         <section id="metodologia">
             <h2>Metodologia de Pesquisa</h2>
-            <p>A metodologia deste trabalho é estruturada como um Estudo de Caso Aplicado, focado na análise e intervenção técnica em um projeto de software de 
-                código aberto e impacto social (Open Source). </p>
-            <p> O processo de pesquisa e desenvolvimento será dividido em quatro etapas principais: </p>
+            <p>A metodologia deste trabalho será conduzida como um estudo de caso aplicado, tendo como objeto de investigação o projeto Querido Diário, 
+                iniciativa de código aberto voltada à coleta e disponibilização de dados provenientes de diários oficiais brasileiros. O objetivo é 
+                analisar a arquitetura atualmente utilizada pelo projeto, propor uma nova solução arquitetural voltada à escalabilidade e implementá-la 
+                no contexto da expansão da coleta de diários oficiais estaduais. </p>
+            <p> O processo de pesquisa e desenvolvimento será dividido em cinco etapas principais: </p>
 
             <ol>
                 <li><strong>Diagnóstico e Imersão Técnica</strong>
-                    <p>A etapa inicial consiste em uma análise profunda  do ecossistema do projeto base. Isso inclui o estudo da documentação arquitetural, o 
-                    mapeamento de fluxos de Pull Requests (PRs) e a identificação de gargalos no ciclo de desenvolvimento. O objetivo é compreender como 
-                    a estrutura atual se comporta para identificar oportunidades reais de modernização.</p>
+                    <p> A primeira etapa consiste na compreensão do funcionamento do Querido Diário, incluindo sua arquitetura atual, fluxo de 
+                        processamento, infraestrutura de execução e organização dos repositórios. Serão analisados os componentes responsáveis pela 
+                        coleta de dados, os mecanismos de execução dos raspadores (spiders) e os processos de integração com o restante da plataforma.
+                        <br>
+                        Além da análise técnica, será realizado um levantamento dos requisitos funcionais e não funcionais relacionados à expansão da 
+                        plataforma para a coleta de diários oficiais estaduais.</p>
                 </li>
 
-                <li><strong>Definição de Escopo e Inovação com IA</strong> 
-                    <p>A partir do diagnóstico, serão selecionados eixos de atuação onde a Inteligência Artificial possa atuar como diferencial competitivo e 
-                    qualitativo. Os caminhos exploratórios incluem: </p>
-                    <ul>
-                        <li>Automação do Ciclo de Revisão: Implementação de agentes de IA para análise e revisão automatizada de código.</li>
-                        <li>Desenvolvimento Assistido: Uso de modelos para aceleração de novas features e resolução inteligente de bugs.</li>
-                        <li>Refatoração e Evolução Arquitetural: Aplicação de conceitos modernos para otimização de sistemas legados.</li>  
-                    </ul>
+                <li><strong>Fundamentação Teórica e Análise Arquitetural</strong> 
+                    <p> Nesta etapa será conduzida uma revisão bibliográfica sobre arquitetura de software, escalabilidade de sistemas distribuídos e 
+                        padrões arquiteturais utilizados em aplicações de processamento de dados. A partir desse referencial teórico, serão identificadas 
+                        limitações da arquitetura atualmente empregada pelo Querido Diário e discutidas alternativas de projeto capazes de atender aos 
+                        requisitos de escalabilidade, manutenibilidade e evolução do sistema.
+                        <br>
+                        A análise também contemplará os trade-offs associados às diferentes abordagens arquiteturais encontradas na literatura, 
+                        justificando as decisões adotadas na solução proposta. </p>
                 </li>
                 
-                <li><strong>Desenvolvimento e Implementação: </strong> 
-                    <p>Esta etapa consiste na execução prática das soluções propostas, com foco na integração incremental das melhorias ao sistema existente. 
-                    O desenvolvimento seguirá princípios de engenharia de software contemporâneos, como versionamento estruturado, integração contínua (CI) 
-                    e revisão colaborativa de código.As atividades incluem:</p>
-                    <ul>
-                        <li>Implementação de agentes de IA: Desenvolvimento e integração de ferramentas baseadas em modelos de linguagem para suporte à 
-                            revisão de código, geração de sugestões e automação de tarefas repetitivas.</li>
-                        <li>Refatoração progressiva: Aplicação de técnicas de modernização em módulos críticos do sistema, visando melhorar legibilidade, 
-                            manutenibilidade e desempenho sem comprometer a estabilidade.</li>
-                        <li>Evolução arquitetural: Introdução de melhorias estruturais, como modularização, desacoplamento de componentes e adoção de boas 
-                            práticas modernas (ex: APIs bem definidas, separação de responsabilidades).</li>
-                        <li>Validação contínua: Uso de testes automatizados e validação em ambiente real para garantir que as modificações não introduzam 
-                            regressões.</li>
-                    </ul>
+                <li><strong>Projeto e Implementação da Arquitetura Proposta</strong> 
+                    <p> Com base nos resultados das etapas anteriores, será projetada uma nova arquitetura para suportar a coleta de diários oficiais estaduais. 
+                        A implementação terá como escopo inicial a criação e integração dos coletores correspondentes às unidades federativas brasileiras, 
+                        utilizando a nova estrutura arquitetural como ambiente de validação da proposta.
+                        <br>
+                        Durante o desenvolvimento serão adotadas práticas de engenharia de software, incluindo controle de versão, revisão de código e documentação 
+                        das decisões arquiteturais tomadas ao longo do projeto.</p>
                 </li>
 
-                <li><strong>Avaliação de Resultados e Impacto: </strong> 
-                    <p>A avaliação será conduzida de forma quantitativa e qualitativa, com o objetivo de medir os ganhos obtidos com a modernização proposta. 
-                    Serão considerados:</p>
-                    <ul>
-                        <li>Métricas de engenharia: Análise de indicadores como tempo de revisão de Pull Requests, número de bugs reportados, cobertura de 
-                            testes e frequência de deploy.</li>
-                        <li>Produtividade do desenvolvimento: Comparação entre o fluxo antes e depois da introdução das ferramentas de IA, avaliando redução 
-                            de esforço manual e aumento de eficiência.</li>
-                        <li>Qualidade do código: Avaliação da evolução estrutural do sistema por meio de métricas como complexidade ciclomática e organização 
-                            modular.</li>
-                        <li>Impacto social: Análise do valor gerado para o projeto de código aberto e para seus usuários finais, considerando melhorias de 
-                            usabilidade, estabilidade e escalabilidade.</li>
-                    </ul>
+                <li><strong>Avaliação de Resultados e Impacto</strong> 
+                    <p> A avaliação da solução será realizada por meio da comparação entre a arquitetura atualmente utilizada e a arquitetura proposta.
+                        <br>
+                        Serão definidos cenários de execução que permitam analisar aspectos como capacidade de processamento, utilização de recursos computacionais, 
+                        facilidade de manutenção e comportamento sob diferentes cargas de trabalho. Quando aplicável, serão realizados testes de carga utilizando um 
+                        simulador capaz de reproduzir diferentes volumes de execução dos coletores, permitindo observar o comportamento do sistema em situações de 
+                        crescimento da demanda.
+                        <br>
+                        Além das métricas quantitativas, também serão considerados aspectos qualitativos relacionados à experiência dos mantenedores do projeto e à 
+                        viabilidade de adoção da solução no ecossistema do Querido Diário.</p>
+                </li>
+
+                <li><strong>Análise dos Resultados e Consolidação</strong> 
+                    <p> Por fim, os resultados obtidos serão analisados à luz dos objetivos do trabalho e do referencial teórico estudado.
+                        <br>
+                        Serão discutidos os benefícios alcançados, as limitações identificadas durante a implementação e as possibilidades de evolução futura da 
+                        arquitetura proposta. Também será avaliado o potencial da solução como modelo para a expansão gradual dos demais coletores do projeto, 
+                        contribuindo para a sustentabilidade técnica do Querido Diário e para a ampliação de seu impacto social.</p>
                 </li>
 
             </ol>
@@ -108,25 +111,42 @@
 
         <section id="escrita">
             <h2>Escrita e Documentação do Trabalho</h2>
-            <p>
-                A produção do trabalho acadêmico será conduzida de forma paralela ao desenvolvimento técnico, garantindo alinhamento entre prática e reflexão 
-                teórica. A monografia seguirá as diretrizes do Instituto de Matemática e Estatística da Universidade de São Paulo, contemplando tanto a fundamentação 
-                conceitual quanto a análise crítica dos resultados obtidos.
-            </p>
-            <p>
-                O documento será estruturado em capítulos que abordam: (i) o contexto e motivação do problema, (ii) revisão de literatura sobre modernização de software e 
-                uso de Inteligência Artificial no desenvolvimento, (iii) descrição detalhada do sistema analisado, (iv) metodologia aplicada, (v) implementação das soluções 
-                propostas e (vi) avaliação dos resultados.
-            </p>
-            <p>
-                Além da descrição técnica, o trabalho buscará explicitar decisões de engenharia, trade-offs adotados e limitações encontradas, contribuindo para a reprodutibilidade 
-                e para a consolidação do conhecimento gerado. A escrita também será utilizada como ferramenta de reflexão crítica sobre o uso de IA no contexto de engenharia de 
-                software contemporânea.
-            </p>
-            <p>
-                Por fim, por se tratar de TCC extensionista, o trabalho terá um forte viés de análise do impacto social das intervenções propostas, buscando evidenciar como a 
-                modernização de software pode contribuir para a melhoria de projetos de código aberto e, consequentemente, para a comunidade de usuários e desenvolvedores envolvidos.
-            </p>
+            <section id="escrita">
+                <h2>Escrita e Documentação do Trabalho</h2>
+                
+                <p>
+                    A produção do trabalho acadêmico será conduzida de forma paralela ao desenvolvimento técnico, buscando manter o alinhamento entre a fundamentação 
+                    teórica, as decisões de engenharia adotadas e os resultados obtidos ao longo do projeto. A monografia seguirá as diretrizes do Instituto de Matemática, 
+                    Estatística e Ciência da Computação da Universidade de São Paulo, integrando aspectos conceituais, experimentais e extensionistas.
+                </p>
+                
+                <p>
+                    O documento será estruturado em capítulos que abordam: (i) o contexto e a motivação do problema, (ii) a revisão de literatura sobre arquitetura de 
+                    software, escalabilidade e padrões arquiteturais, (iii) a apresentação do projeto Querido Diário e de sua arquitetura atual, (iv) a metodologia adotada, 
+                    (v) o projeto e a implementação da arquitetura proposta, (vi) a avaliação experimental e comparação entre as soluções analisadas e (vii) a discussão dos 
+                    resultados e trabalhos futuros.
+                </p>
+                
+                <p>
+                    Além da descrição técnica da solução desenvolvida, o trabalho buscará explicitar as decisões arquiteturais tomadas durante o projeto, os critérios 
+                    utilizados para sua seleção, os trade-offs envolvidos e as limitações identificadas. Dessa forma, pretende-se contribuir para a reprodutibilidade do 
+                    estudo e para a consolidação do conhecimento produzido.
+                </p>
+                
+                <p>
+                    Como parte da documentação do projeto, também serão registradas as ferramentas utilizadas durante o desenvolvimento, incluindo eventuais recursos 
+                    baseados em inteligência artificial empregados como apoio à implementação, documentação e revisão textual, em conformidade com as orientações 
+                    institucionais e do próprio projeto Querido Diário.
+                </p>
+                
+                <p>
+                    Por se tratar de um Trabalho de Conclusão de Curso extensionista, a análise dos resultados considerará não apenas aspectos técnicos, mas também o 
+                    impacto social da solução proposta. Nesse contexto, será discutido como a evolução arquitetural do Querido Diário pode contribuir para ampliar a 
+                    transparência pública, facilitar o acesso a informações governamentais e fortalecer um importante projeto brasileiro de software livre.
+                </p>
+            
+            </section>
+            
         </section>
 
         <section id="cronograma">
